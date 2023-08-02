@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import ContextTodo from "../ContextApi/Context";
+import './list.css'
 
 function List({items }) {
   const {  handleEdit, handleDelete } =useContext(ContextTodo)
@@ -15,7 +16,7 @@ function List({items }) {
             <td>{item.email}</td>
             <td>{item.salary}</td>
             <td>{item.date}</td>
-            <td>
+            <td className="td"> 
               <button
                 className="btn btn-outline-dark "
                 onClick={() => {
@@ -25,7 +26,7 @@ function List({items }) {
                 Edit
               </button>
               <button
-                className="btn btn-outline-dark mx-2"
+                className="btn  btn-outline-dark "
                 onClick={() => handleDelete(item.id)}
               >
                 Delete

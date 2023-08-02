@@ -1,0 +1,13 @@
+@media screen and (max-width: 991px) { 
+    .td {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap:5px !important;
+    justify-content: start !important;
+        align-items: start !important;
+    }
+}
+.td{
+display: flex;
+gap: 10px;
+}
